@@ -1,37 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact</title>
+    <link href="stylesheet.css" type="text/css" rel="stylesheet" />
+    <style>
+        
+        /*contact*/
+        .contactImg{
+            width: 100%;
+        }
+        /*favicon*/
+        .ulFavicon {
+            list-style-type: none;
+            padding: 0;
+            border: 0;
+            margin: 0;
+        }
+
+        .favivonContact {
+            margin-left: 8%;
+            width: 20%;
+        }
+
+        .h2Contact {
+            background-color: black;
+            color: white;
+            font-size: 20px;
+            text-align: center;
+            padding: 0;
+            border: 0;
+            margin: 0;
+        }
+        .contactFormulier{
+            width: 75%;
+        }
+    </style>
 </head>
+
 <body>
-    <img src="Foto's/Contact/contact_pagina.png" alt="Contact pagina">
-    <ul>
-        <li><img src="Favicon/contact/envelope-icon.png" alt="Mail"></li>
-        <li><img src="Favicon/contact/linkedin-icon.png" alt="LinkedIn"></li>
-        <li><img src="Favicon/contact/maps-pin-black-icon.png" alt="woonplaats"></li>
+    <nav>
+        <ul class="ulNav">
+            <li><img class="navFavicon" src="Favicon/b-button-icon.png" alt="Logo Britt"></th>
+            </li>
+            <li><a class="liANav"  href="contact.html">contact</a></li>
+            <li><a class="liANav" href="#">Hobby's</a></li>
+            <li><a class="liANav" href="#">Ervaring</a></li>
+            <li><a class="liANav" href="#">Curriculum Vitae</a></li>
+            <li><a class="liANav" href="Index.html">Home</a></li>
+        </ul>
+    </nav>
+    <img class="contactImg" src="Foto's/Contact/contact_pagina.png" alt="Contact pagina">
+    <ul class="ulFavicon">
+        <li><img class="favivonContact" src="Favicon/contact/envelope-icon.png" alt="Mail">E-mail:
+            r0984392@student.thomasmore.be</li>
+        <li><img class="favivonContact" src="Favicon/contact/linkedin-icon.png" alt="LinkedIn">LinkdIn: Britt Meykens
+        </li>
+        <li><img class="favivonContact" src="Favicon/contact/maps-pin-black-icon.png" alt="woonplaats">België, Paal</li>
     </ul>
-    <ul>
-        <li>E-mail: r0984392@student.thomasmore.be</li>
-        <li>LinkdIn: Britt Meykens</li>
-        <li>België, Paal</li>
-    </ul>
-    <h2>Contact formulier</h2>
+    <h2 class="h2Contact">Contact formulier</h2>
     <form action="#" method="post">
         <div>
-            <input type="text" name="naam" id="naam" placeholder="Naam" required>
+            <input class="contactFormulier" type="text" name="naam" id="naam" placeholder="Naam" required>
         </div>
         <div>
-            <input type="text" name="voornaam" id="voornaam" placeholder="Voornaam" required>
+            <input class="contactFormulier" type="text" name="voornaam" id="voornaam" placeholder="Voornaam" required>
         </div>
         <div>
-            <input type="email" name="email" id="email" placeholder="e-mail" required>
+            <input class="contactFormulier" type="email" name="email" id="email" placeholder="e-mail" required>
         </div>
         <div>
-            <input type="text" name="bericht" id="bericht" placeholder="Uw bericht" required>
+            <input class="contactFormulier" type="text" name="bericht" id="bericht" placeholder="Uw bericht" required>
         </div>
-        <input type="submit" value="Verzenden">          
+        <input type="submit" value="Verzenden">
     </form>
 </body>
+
 </html>

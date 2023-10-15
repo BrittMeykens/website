@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
+body {
+    font-family: "Inconsolata", Arial, Helvetica, sans-serif
+}
+
+/*navbar*/
+.ulNav {
+    list-style-type: none;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+.liANav {
+    color: white;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+    float: right;
+}
+
+.navFavicon {
+    width: 40px;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    float: left;
+}
+
+/*home*/
+.homeImg {
+    width: 100%;
+}
+
+.pTitel {
+    padding: 0;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.wieBenIk {
+    border: solid 1px black;
+    width: 75%;
+    padding: 0px 10px;
+    margin-left: 8%;
+    float: left;
+}
+
+.britt {
+    height: 150px;
+    float: right;
+    margin-right: 8%;
+}
