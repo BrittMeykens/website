@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
 
 body {
-    font-family: "Inconsolata", Arial, Helvetica, sans-serif
+    margin: 0;
+    font-family: "Inconsolata", Arial, Helvetica, sans-serif;
+    font-size: 15px;
 }
 
 /*navbar*/
@@ -31,7 +33,7 @@ body {
 }
 
 /*home*/
-.homeImg {
+#homeImg {
     width: 100%;
 }
 
@@ -53,4 +55,37 @@ body {
     height: 150px;
     float: right;
     margin-right: 8%;
+}
+
+
+/*Werkervaring*/
+#ervaringImg {
+    width: 100%;
+}
+
+.pErvaring {
+    text-align: center;
+}
+
+.tableErvaring {
+    padding: 0;
+    border: 0;
+    margin: 0 auto 30px auto;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+.thErvaring{
+    font-size: 18px;
+    padding-right: 25px;
+    border: 0;
+    margin: 0;
+    border: 1px solid black;
+}
+
+.tdErvaring{
+    padding-left: 5px;
+    padding-right: 25px;
+    border: 0;
+    margin-left: 0;
+    border: 1px solid black;
 }
