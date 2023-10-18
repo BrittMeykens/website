@@ -6,77 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link href="stylesheet.css" type="text/css" rel="stylesheet" />
-    <style>
-        #homeImg {
-            width: 100%;
-        }
-
-        .pTitel {
-            padding: 0;
-            margin-top: 10px;
-            font-weight: bold;
-        }
-
-        .wieBenIk {
-            border: solid 1px black;
-            width: 75%;
-            padding: 0px 10px;
-            margin-left: 8%;
-            float: left;
-        }
-
-        .britt {
-            height: 150px;
-            float: right;
-            margin-right: 8%;
-        }
-
-        h2 {
-            background-color: black;
-            color: white;
-            font-size: 20px;
-            text-align: center;
-            padding: 2px;
-            border: 0;
-            margin: 20px 0 5px 0;
-        }
-
-        .doorverwijzingCvHome {
-            padding: 0.5%;
-            border: 1px solid black;
-            margin-left: 8%;
-            margin-right: 75%;
-            text-align: center;
-        }
-
-        .doorverwijzingHobHome {
-            padding: 0.5%;
-            border: 1px solid black;
-            margin-left: 75%;
-            margin-right: 8%;
-            text-align: center;
-        }
-
-        .doorverwijzingErvHome {
-            padding: 0.5%;
-            border: 1px solid black;
-            margin-left: 8%;
-            margin-right: 75%;
-            text-align: center;
-        }
-
-        .doorverwijzingConHome {
-            padding: 0.5%;
-            border: 1px solid black;
-            margin-left: 75%;
-            margin-right: 8%;
-            text-align: center;
-        }
-
-        .faviconHome {
-            width: 20%;
-        }
-    </style>
 </head>
 
 <body>
@@ -87,12 +16,12 @@
             <li><a class="liANav" href="hobbys.html">Hobby's</a></li>
             <li><a class="liANav" href="ervaring.html">Ervaring</a></li>
             <li><a class="liANav" href="curriculum_vitae.html">Curriculum Vitae</a></li>
-            <li><a class="liANav" href="Index.html">Home</a></li>
+            <li><a class="liANav" href="index.html">Home</a></li>
         </ul>
     </nav>
 
     <main>
-        <img id="homeImg" src="foto's/index/code-583073_1280.jpg" alt="Home pagina">
+        <img id="homeImg" src="foto's/index/code5830731280.jpg" alt="Home pagina">
         <div class="wieBenIk">
             <p class="pTitel">Wie ben ik?</p>
             <p>Ik ben Britt Meykens, 18 jaar en momenteel bezig met een graduaatsopleiding programmeren aan de Thomas
@@ -109,25 +38,28 @@
         <div class="clearFloating"></div>
         <h2>Navigeer vlotjes doorheen mijn website </h2>
 
-
-        <div class="doorverwijzingCvHome">
-            <a href="curriculum_vitae.html"><img class="faviconHome" src="favicon/home/icons8-applicant-50.png"
-                    alt="CV bekijken"></a>
-            <p>Klik hier om mijn curriculum vitae te bekijken</p>
-        </div>
-        <div class="doorverwijzingHobHome">
-            <a href="hobbys.html"><img class="faviconHome" src="favicon/home/icons8-dancing-50.png"
-                    alt="hobby's bekijken"></a>
-            <p>Klik hier om meer te weten te komen over mijn hobby’s.</p>
-        </div>
-        <div class="doorverwijzingErvHome">
-            <a href="ervaring.html"><img class="faviconHome" src="favicon/home/icons8-briefcase-settings-50.png"
-                    alt="ervaringen bekijken"></a>
-            <p>Om mijn ervaringen te bekijken klik je hier.</p>
-        </div>
-        <div class="doorverwijzingConHome">
-            <a href="contact.html"><img class="faviconHome" src="favicon/home/name-id-icon.png" alt="contact nemen"></a>
-            <p>Om contact op te nemen met mij kan je hier klikken. Ik beantwoord zo snel mogelijk.</p>
+        <div class="grid-containerHome">
+            <div class="doorverwijzingHome">
+                <a href="curriculum_vitae.html"><img class="faviconHome" src="favicon/index/icons8Applicant50.png"
+                        alt="CV bekijken" title="CV bekijken"></a>
+                <p>Klik hier om mijn curriculum vitae te bekijken</p>
+            </div>
+            <div class="doorverwijzingHome">
+                <a href="ervaring.html"><img class="faviconHome" src="favicon/index/icons8BriefcaseSettings50.png"
+                        alt="ervaringen bekijken" title="ervaringen bekijken"></a>
+                <p>Om mijn ervaringen te bekijken klik je hier.</p>
+            </div>
+            <div class="doorverwijzingHome">
+                <a href="hobbys.html"><img class="faviconHome" src="favicon/index/icons8Dancing50.png"
+                        alt="hobby's bekijken" title="hobby's bekijken"></a>
+                <p>Klik hier om meer te weten te komen over mijn hobby’s.</p>
+            </div>
+            <div class="doorverwijzingHome">
+                <a href="contact.html"><img class="faviconHome" src="favicon/index/nameIdIcon.png" alt="contact nemen"
+                        title="contact nemen"></a>
+                <p>Om contact op te nemen met mij kan je hier klikken.</p>
+                <p>Ik beantwoord zo snel mogelijk.</p>
+            </div>
         </div>
     </main>
 </body>

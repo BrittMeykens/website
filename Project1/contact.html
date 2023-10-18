@@ -7,73 +7,7 @@
     <title>Contact</title>
     <link href="stylesheet.css" type="text/css" rel="stylesheet" />
     <style>
-        /*contact*/
-        #contactImg {
-            width: 100%;
-        }
 
-        /*favicon*/
-        .ulFavicon {
-            list-style-type: none;
-            padding: 0;
-            border: 0;
-            margin: 0;
-        }
-
-        .favivonContact {
-            margin-top: 2%;
-            margin-left: 8%;
-            width: 10%;
-        }
-
-        h2 {
-            background-color: black;
-            color: white;
-            font-size: 20px;
-            text-align: center;
-            padding: 5px;
-            border: 0;
-            margin: 30px 0 30px 0;
-        }
-
-        /*formulier*/
-        .labelContact {
-            margin: 1% 0 0.5% 8%;
-        }
-
-        .formulierContact {
-            padding: 2px 2px 5px 2px;
-            border: 1px solid black;
-            margin-left: 8%;
-            width: 75%;
-        }
-
-        .formulierBerichtContact {
-            padding: 2px 2px 150px 2px;
-            border: 1px solid black;
-            margin-left: 8%;
-            width: 75%;
-        }
-
-        .formulierSubmitContact {
-            border: 1px solid black;
-            background-color: black;
-            color: white;
-            border-radius: 10%;
-            padding: 5px;
-            margin: 1% auto 30px 8%;
-            width: 5%;
-        }
-
-        .formulierSubmitContact:hover {
-            border: 1px solid black;
-            background-color: #a52a2a;
-            color: white;
-        }
-
-        .formulierContact::placeholder {
-            color: #BFBFBF;
-        }
     </style>
 </head>
 
@@ -85,26 +19,47 @@
             <li><a class="liANav" href="hobbys.html">Hobby's</a></li>
             <li><a class="liANav" href="ervaring.html">Ervaring</a></li>
             <li><a class="liANav" href="curriculum_vitae.html">Curriculum Vitae</a></li>
-            <li><a class="liANav" href="Index.html">Home</a></li>
+            <li><a class="liANav" href="index.html">Home</a></li>
         </ul>
     </nav>
 
     <main>
-        <img id="contactImg" src="Foto's/Contact/contact_pagina.png" alt="Contact pagina">
+        <img id="contactImg" src="foto's/contact/contactPagina.png" alt="Contact pagina">
 
-        <ul class="ulFavicon">
-            <li><img class="favivonContact" src="Favicon/contact/envelope-icon.png" alt="Mail">E-mail:
-                r0984392@student.thomasmore.be</li>
-            <li><img class="favivonContact" src="Favicon/contact/linkedin-icon.png" alt="LinkedIn">LinkdIn: Britt
-                Meykens
-            </li>
-            <li><img class="favivonContact" src="Favicon/contact/maps-pin-black-icon.png" alt="woonplaats">België, Paal
-            </li>
-        </ul>
+        <p class="pContact">U kan mij contacteren via ondeerstaande wegen of via het formulier onderaan. Ik zal altijd
+            proberen zo snel mogelijk te reageren.</p>
+
+        <div class="grid-containerContact">
+            <div class="image">
+                <a href="mailto: r0984392@student.thomasmore.be">
+                    <img class="imgContact" src="favicon/contact/envelopeIcon.png" alt="Mail" title="Mail">
+                </a>
+            </div>
+            <div>
+                <p class="pImgContact">E-mail: r0984392@student.thomasmore.be</p>
+            </div>
+            <div class="image">
+                <a href="https://www.linkedin.com/in/britt-meykens-7bb52b292/" target="_blank">
+                    <img class="imgContact" src="favicon/contact/linkedinIcon.png" alt="LinkedIn" title="LinkedIn">
+                </a>
+            </div>
+            <div>
+                <p class="pImgContact">LinkdIn: Britt Meykens</p>
+            </div>
+            <div class="image">
+                <a href="https://maps.app.goo.gl/FkH2GvZe7UT88xEN7" target="_blank">
+                    <img class="imgContact" src="favicon/contact/mapsPinBlackIcon.png" alt="Woonplaats"
+                        title="Woonplaats">
+                </a>
+            </div>
+            <div>
+                <p class="pImgContact">België, Paal</p>
+            </div>
+        </div>
 
         <h2>Contact formulier</h2>
 
-        <form action="#" method="post">
+        <form action="https://tm-statweb.be/sendmail.php" method="post">
             <div class="labelContact">
                 <label for="naam">Naam:</label>
             </div>
@@ -139,7 +94,10 @@
                 <input class="formulierBerichtContact" type="text" name="bericht" id="bericht"
                     placeholder="Schrijf hier uw bericht" required>
             </div>
-            <input class="formulierSubmitContact" type="submit" value="Verzenden">
+            <input type="hidden" name="studentemail" value="r0984392@student.thomasmore.be">
+            <div>
+                <input class="formulierSubmitContact" type="submit" value="Verzenden">
+            </div>
         </form>
     </main>
 </body>

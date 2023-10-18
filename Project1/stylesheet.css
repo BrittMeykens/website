@@ -14,6 +14,30 @@ main {
     clear: both;
 }
 
+h1 {
+    background-color: black;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    padding: 15px;
+    border: 0;
+    margin: 0;
+}
+
+h2 {
+    background-color: black;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    padding: 10px;
+    border: 0;
+    margin: 20px 0 5px 0;
+}
+
+.bottem {
+    margin-bottom: 30px;
+}
+
 /*navbar*/
 .ulNav {
     list-style-type: none;
@@ -47,16 +71,298 @@ main {
     float: left;
 }
 
-/*home*/
+/*index*/
+#homeImg {
+    width: 100%;
+}
 
+.pTitel {
+    padding: 0;
+    margin-top: 10px;
+    font-weight: bold;
+}
 
-/*hobby*/
+.wieBenIk {
+    border: solid 1px black;
+    width: 75%;
+    padding: 0px 10px;
+    margin-top: 10px;
+    margin-left: 8%;
+    float: left;
+}
 
+.britt {
+    height: 150px;
+    float: right;
+    margin-right: 8%;
+}
 
-/*Werkervaring*/
+.grid-containerHome {
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: 35% 35%;
+    grid-gap: 10%;
+    padding: 0;
+    border: 0;
+    margin: 10px 10% 95px 10%;
+}
 
+.doorverwijzingHome {
+    padding: 0.5%;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.faviconHome {
+    width: 20%;
+}
 
 /*CV*/
+.brittCV {
+    height: 250px;
+    float: right;
+    margin: 1% 8% 0 0;
+}
 
+.titelCv {
+    margin-left: 8%;
+    list-style-type: none;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: underline;
+    padding: 20px 0;
+    border: 0;
+}
+
+.persCv {
+    list-style-type: none;
+    margin-left: 8%;
+    padding: 0;
+    border: 0;
+}
+
+.minTekCv {
+    list-style-image: url('favicon/cv/minusLineIcon.png');
+    margin-left: 9%;
+    padding: 0;
+    border: 0;
+}
+
+.nonTekCv {
+    list-style: none;
+}
+
+.tableTitelCv {
+    margin-left: 8%;
+    list-style-type: none;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: underline;
+    padding: 20px 0;
+    border: 1px solid black;
+}
+
+.tableCv {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin-top: 40px;
+    margin-left: 10%;
+}
+
+.tabelTekstCv {
+    padding: 0 20px;
+    border: 1px solid black;
+    margin: 0;
+}
+
+.tabelFotoCv {
+    padding: 0;
+    border: 1px solid black;
+    margin: 0;
+}
+
+.pCv {
+    padding: 0;
+    border: 0;
+    margin: 5% 0 30px 10%;
+}
+
+/*Werkervaring*/
+#ervaringImg {
+    width: 100%;
+}
+
+.pErvaring {
+    text-align: center;
+}
+
+.tableErvaring {
+    padding: 0;
+    margin: 0 auto 30px auto;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+.thErvaring {
+    font-size: 18px;
+    padding-right: 25px;
+    margin: 0;
+    border: 1px solid black;
+}
+
+.tdErvaring {
+    padding-left: 5px;
+    padding-right: 25px;
+    margin: 0;
+    border: 1px solid black;
+}
+
+/*hobby*/
+#hobbyImg {
+    width: 100%;
+}
+
+.pHobby {
+    margin: 0 8% 30px 8%;
+}
+
+.ulHobby {
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+.liHobby {
+    list-style-type: none;
+    padding: 0;
+    border: 0;
+    margin: 1% 0 0 8%;
+}
+
+.liHobby ul li {
+    list-style-type: disc;
+    padding-bottom: 0;
+    border: 0;
+    margin: 0;
+}
+
+.grid-containerHobby {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+    padding: 0;
+    border: 0;
+    margin: 0 8%;
+}
+
+.gebak {
+    height: 150px;
+    float: right;
+    margin-right: 8%;
+}
+
+.arthur {
+    height: 200px;
+    float: right;
+}
 
 /*contact*/
+#contactImg {
+    width: 100%;
+}
+
+.pContact {
+    padding: 0;
+    border: 0;
+    margin: 1% 0 1% 8%;
+}
+
+/*favicon*/
+.grid-containerContact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    padding: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.imgContact {
+    width: 20%;
+}
+
+.imageContact {
+    flex-basis: 40%;
+}
+
+.pImgContact {
+    padding: 1% 0.5%;
+    border: 1px solid black;
+    margin: 1% 0 1% 8%;
+    width: 50%;
+}
+
+/*formulier*/
+.formulierContact {
+    padding: 2px 2px 5px 2px;
+    border: 1px solid black;
+    margin: 0 20%;
+    width: 60%;
+}
+
+.labelContact {
+    margin: 1% 0 0.5% 20%;
+}
+
+.formulierBerichtContact {
+    padding: 2px 2px 150px 2px;
+    border: 1px solid black;
+    margin: 0 20%;
+    width: 60%;
+}
+
+
+.formulierContact::placeholder {
+    color: #BFBFBF;
+}
+
+.formulierBerichtContact::placeholder {
+    color: #BFBFBF;
+}
+
+.formulierContact:valid {
+    background-color: white;
+    border: 1px solid black;
+}
+
+.formulierContact:invalid {
+    background-color: white;
+    border: 2px solid darkred;
+}
+
+.formulierBerichtContact:valid {
+    background-color: white;
+    border: 1px solid black;
+}
+
+.formulierBerichtContact:invalid {
+    background-color: white;
+    border: 2px solid darkred;
+}
+
+.formulierSubmitContact {
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    border-radius: 10%;
+    padding: 5px;
+    margin: 1% 20% 30px 20%;
+}
+
+
+
+.formulierSubmitContact:hover {
+    border: 1px solid black;
+    background-color: #a52a2a;
+    color: white;
+}
