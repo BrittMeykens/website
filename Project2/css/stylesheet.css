@@ -1,0 +1,56 @@
+h1 {
+    background-color: black;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    padding: 15px;
+    border: 0;
+    margin: 0;
+}
+
+h2 {
+    background-color: black;
+    color: white !important;
+    font-size: 25px;
+    text-align: center;
+    padding: 10px;
+    border: 0;
+    margin: 20px 0 5px 0;
+}
+
+/*nav*/
+.bg-dark {
+    background-color: black !important;
+}
+
+.logo {
+    width: 20%;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    float: left;
+}
+
+.img-fluid {
+    width: 100%;
+}
+
+/*Index*/
+.britt {
+    width: 20%;
+    display: block;
+}
+
+.card-img-top {
+    width: 25%;
+}
+
+.p-home {
+    display: block
+}
+
+/*CV*/
+
+
+
+/*contact*/
