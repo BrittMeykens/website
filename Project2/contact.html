@@ -4,10 +4,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portfolio Britt">
+    <meta name="author" content="Britt Meykens">
     <title>contact</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
+    <link rel="icon" type="image/x-icon" href="favicon/b-button-icon.png">
     <link rel="stylesheet" href="css/stylesheet.css">
 </head>
 
@@ -44,23 +46,70 @@
         </div>
     </nav>
 
-    <img src="foto's/contact/contactPagina.png" class="img-fluid" alt="...">
+    <img src="foto/contact/contactPagina.png" class="img-fluid mb-3" alt="Foto contactpagina">
+
     <main class="container">
         <p>U kan mij contacteren via ondeerstaande wegen of via het formulier onderaan. Ik zal altijd proberen zo snel
             mogelijk te reageren.</p>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="mailto: r0984392@student.thomasmore.be">
+                        <img src="favicon/contact/envelopeIcon.png" alt="Mail icoon" class="faviconContact">
+                    </a>
+                    <div class="caption mt-2">
+                        <p>E-mail: r0984392@student.thomasmore.be</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <a href="https://www.linkedin.com/in/britt-meykens-7bb52b292/" target="_blank">
+                        <img src="favicon/contact/linkedinIcon.png" alt="LinkdIn icoon" class="faviconContact">
+                    </a>
+                    <div class="caption mt-2">
+                        <p>LinkdIn: Britt Meykens</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <a href="https://maps.app.goo.gl/FkH2GvZe7UT88xEN7" target="_blank">
+                        <img src="favicon/contact/mapsPinBlackIcon.png" alt=" Locatie icoon" class="faviconContact">
+                    </a>
+                    <div class="caption mt-2">
+                        <p>België, Paal</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
     <h2>Contact formulier</h2>
     <main class="container">
-        <form action="#">
+        <form action="https://tm-statweb.be/sendmail.php" method="post">
             <div class="row">
                 <div class="col-md mb-3">
                     <label for="voornaam" class="form-label">Voornaam</label>
-                    <input type="text" class="form-control" id="voornaam" placeholder="Voornaam">
+                    <input type="text" class="form-control" id="voornaam" placeholder="Voornaam" required>
                 </div>
                 <div class="col-md mb-3">
                     <label for="naam" class="form-label">Naam</label>
-                    <input type="text" class="form-control" id="naam" placeholder="Naam">
+                    <input type="text" class="form-control" id="naam" placeholder="Naam" required>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md mb-3">
+                    <label for="onderwerp" class="form-label">Onderwerp</label>
+                    <input type="text" class="form-control" id="onderwerp" placeholder="Onderwerp">
+                </div>
+                <div class="col-md mb-3">
+                    <label for="skill" class="form-label">Skill interesse</label>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Skills</option>
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                        <option value="sql">SQL</option>
+                        <option value="bootstrap">Bootstrap</option>
+                        <option value="c#">C#</option>
+                    </select>
                 </div>
             </div>
 
@@ -68,31 +117,28 @@
                 <label for="email" class="form-label">Email address</label>
                 <input type="email" class="form-control" id="email" placeholder="naam@voorbeeld.com">
             </div>
-            <div class="mb-3">
-                <label for="onderwerp" class="form-label">Onderwerp</label>
-                <input type="text" class="form-control" id="onderwerp" placeholder="Onderwerp">
-            </div>
+
             <div class="mb-3">
                 <label for="bericht" class="form-label">Uw bericht:</label>
                 <textarea class="form-control" id="bericht" rows="5" placeholder="Schrijf hier uw bericht"></textarea>
             </div>
+            <input type="hidden" name="studentemail" value="r0984392@student.thomasmore.be">
             <button type="submit" class="btn btn-dark">Verzenden</button>
         </form>
     </main>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 mx-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+            <span class="mb-3 mb-md-0 text-muted">&copy; 2023 Britt Meykens</span>
+        </div>
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a class="text-muted" href="https://www.linkedin.com/in/britt-meykens-7bb52b292/"
+                    target="_blank"><img class="bi" height="30" src="favicon/contact/linkedinIcon.png"
+                        alt="Linkedin icoon"></a></li>
+            <li class="ms-3"><a class="text-muted" href="mailto: r0984392@student.thomasmore.be">
+                    <img class="bi" height="30" src="favicon/contact/envelopeIcon.png" alt="Mail Icoon"></a></li>
+        </ul>
+    </footer>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
